@@ -1,0 +1,46 @@
+.checkout {
+    flex: 1;
+    background: linear-gradient(45deg, #4f2910eb, #5a0036e8), url(../images/delivery.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1em;
+}
+
+.checkout form {
+    width: 40%;
+    margin: auto;
+    background-color: white;
+    height: 100%;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.checkout form .input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+}
+
+.checkout form input[type="text"], .checkout form input[type="number"], .checkout form input[type="email"] {
+    padding: 0.4em;
+    outline: none;
+    margin-top: 0.2em;
+}
+
+.checkout form a {
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0.2em;
+    padding: 0.5em;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .checkout form {
+        width: 90%;
+    }
+}

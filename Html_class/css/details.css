@@ -1,0 +1,180 @@
+.product-info {
+    flex: 1;
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.product-info .image {
+    flex: 1;
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    margin: 1em 2em;
+    position: relative;
+}
+
+.product-info .image  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-info .info {
+    flex: 1;
+    padding: 1em 2em;
+}
+
+.product-info .info .detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.product-info .info .desc {
+    margin-bottom: 1em;
+}
+
+.btn-container {
+    display: flex;
+}
+
+.product-info .info .btn-container p {
+    background-color: #ff843246;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10em;
+    transition: all ease;
+    color: #ff8432;
+    cursor: pointer;
+}
+
+.product-info .info .btn-container p:hover {
+    background-color: #ff8432;
+    color: white;
+}
+
+.product-info .info .fav {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.product-info .info .btn-container button {
+    border: none;
+    background-color: #ff843246;
+    color: #ff8432;
+    transition: all ease;
+    margin-left: 2em;
+    border-radius: 4em;
+    padding: 0 4em;
+    font-weight: bold;
+    transition: all ease;
+}
+
+.product-info .info .btn-container button:hover {
+    background-color: #ff8432;
+    color: white;
+}
+
+.comment-list {
+    margin: 2em;
+}
+
+.comment-list .comment {
+    border: 1px solid #512609;
+    padding: 0.5em;
+    margin: 1em 0;
+    border-radius: 0.4em;
+}
+
+.faq-container {
+    flex: 1;
+    display: flex;
+    width: 90%;
+    margin: 1em auto;
+}
+
+.faq-container .faqs {
+    flex: 0.6em;
+}
+
+.faq-container .faqs .faq {
+    border: 1px solid #ff8432;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    cursor: pointer;
+}
+
+.faq-container .faqs-form {
+    flex: 0.4em;
+    padding: 1em;
+}
+
+.faq-container .faqs-form div {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+.faq-container .faqs-form input {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em;
+    outline:none
+}
+
+.faq-container .faqs-form .btn-container{
+    flex-direction: row;
+    justify-content: end;
+}
+
+.faq-container .faqs-form .btn-container input {
+    padding: 0.5em 2em;
+    cursor: pointer;
+}
+
+.faq-container .faqs-form .btn-container input[type="submit"] {
+    background-color: #ff8432;
+    color: white;
+    margin-right: 2em;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .product-info {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .product-info .image {
+        flex: 0.7;
+    }
+
+    .product-info .info {
+        flex: 0.3;
+    }
+
+    .product-info .info .detail {
+        display: none;
+    }
+
+    .product-info .info .desc {
+        display: none;
+    }
+
+    .btn-container {
+        margin: 1em 0;
+    }
+
+    .faq-container {
+        flex-direction: column;
+        overflow: auto;
+    }
+}

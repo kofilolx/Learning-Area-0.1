@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: calc(80%);
+    margin: auto;
+}
+
+header {
+    flex: 0.15;
+    text-align: center;
+    color: white;
+    background: rgb(255,132,50);
+    background: linear-gradient(90deg, rgba(255,132,50,1) 35%, rgba(255,0,151,1) 100%);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    padding: 0 1em;
+    background-color: #180500;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav select option {
+    background-color: #180500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav form {
+    flex: 0.6;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 1em;
+    position: relative;
+}
+
+nav ul li .counter {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    background-color: #ff8432;
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
+    border-radius: 1em;
+}
+
+nav ul li #fav, nav ul li #notif, nav ul li #cart {
+    display: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon {
+    height: 1.5em;
+    width: 1.5em;
+    color: white;
+    transition: all ease;
+}
+
+.icon:hover {
+    color: #ff0097;
+}
+
+nav ul li #logout {
+    cursor: pointer;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    background-color: #0a0200;
+    color: white;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 1em 0 2em 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    transition: color ease;
+}
+
+footer li {
+    margin-left: 1em;
+    font-size: 1.1em;
+}
+
+footer li a:hover {
+    color: #ff0097;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 2em;
+    }
+    
+    nav form {
+        display: none;
+    }
+
+    footer div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer li {
+        margin: 0.2em;
+    }
+}

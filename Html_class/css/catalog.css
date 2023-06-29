@@ -1,0 +1,59 @@
+#app {
+    flex: 0.8;
+    overflow-y: auto;
+}
+
+#app .product-list {
+    width: 85%;
+    margin: 2em auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+}
+
+.sidebar {
+    flex: 0.2;
+    border-right: 1px solid #512609;
+}
+
+.sidebar .sidebar-categories a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar .sidebar-categories, .sidebar .sidebar-filter {
+    margin: 2em;
+}
+
+.sidebar .sidebar-categories div, .sidebar .sidebar-categories a, .sidebar .sidebar-filter div, .sidebar .sidebar-filter h5 {
+    margin: 0.5em 0;
+}
+
+.sidebar .sidebar-filter button {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border: none;
+    background-color: #ff8432;
+    border-radius: 0.2em;
+}
+
+.sidebar .sidebar-filter input {
+    padding: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+    #app {
+        flex: 1;
+    }
+
+    #app .product-list {
+        width: 100%;
+        padding: 1em 2em;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

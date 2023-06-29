@@ -1,0 +1,93 @@
+.cart-container {
+    display: flex;
+}
+
+.container {
+    width: 70%;
+}
+
+#no-item {
+    flex: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    height: 80vh;
+}
+
+#cart-product-list {
+    flex: 0.7;
+    display: none;
+    min-height: 80vh;
+}
+
+#cart-product-list a {
+    text-decoration: none;
+    color: black;
+}
+
+#cart-product-list .cart-card {
+    display: flex;
+    border: 1px solid #ff8432;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+#cart-product-list .cart-card img {
+    height: 70px;
+    width: 80px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 2em;
+    border-radius: 1em;
+}
+
+.cart-container .cart-info {
+    flex: 0.3;
+    padding: 2em 1em;
+}
+
+.cart-container .cart-info div {
+    margin: 1em 0;
+}
+
+.cart-container .cart-info div p {
+    margin: 0.2em;
+}
+
+.cart-container .cart-info .cart-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-container .cart-info .cart-btn a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: #ff8432;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    display: none;
+}
+
+.cart-container .cart-info .cart-btn button {
+    border: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 2;
+    }
+
+    .cart-container {
+        flex-direction: column-reverse;
+    }
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Ecommerce</title>
+</head>
+
+<body>
+  <div class="landing">
+    <header class="center" id="header">
+      <h1>E-COMMERCE WEBSITE</h1>
+    </header>
+    <nav>
+      <a href="/">
+        <h2>E-commerce</h2>
+      </a>
+      <form id="nav-form">
+        <div>
+          <select name="categories" id="categories" style="
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 0.5em 1em;
+                border: 1px solid gray;
+                border-radius: 0;
+                background-color: transparent;
+                outline: none;
+                color: white;
+              ">
+            <option value="categories">Categories</option>
+            <option value="home">Home</option>
+            <option value="electronics">Electronics</option>
+            <option value="sports">Sports</option>
+            <option value="fashion">Fashion</option>
+          </select>
+        </div>
+        <div style="flex: 1; display: flex; margin-left: 0.5em">
+          <input type="search" name="search" id="search" required placeholder="search product here.." style="
+                flex: 1;
+                font-size: 1em;
+                font-family: Arial, Helvetica, sans-serif;
+                border: none;
+                padding: 0.5em;
+              " />
+          <input type="submit" value="SEARCH" style="
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                font-weight: bold;
+                border: none;
+                background-color: #ff8432;
+                padding: 0 0.3em;
+              " />
+        </div>
+      </form>
+      <ul>
+        <li>
+          <div class="counter" id="notif">1</div>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg></a>
+        </li>
+        <li>
+          <div class="counter" id="cart">1</div>
+          <a href="./cart.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+              </svg></a>
+        </li>
+        <li>
+          <div class="counter" id="fav">1</div>
+          <a href="./favorite.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg></a>
+        </li>
+        <li>
+          <div>
+            <a id="log" href="./login.html">SignUp | Login</a>
+            <p id="logout">Logout</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="showcase">
+      <div style="
+            color: black;
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            transform: translate(0, 70%);
+          ">
+        <h1 style="margin-bottom: 0.3em">
+          Join Our Happy Customers All Over Ghana.
+        </h1>
+        <p style="margin-bottom: 1em">
+          Shop with us and get 20% discount as well as many amazing packages.
+        </p>
+        <a href="./catalog.html" class="btn">view catalog</a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h3 style="margin-top: 2em">Categories</h3>
+    <section class="category">
+      <a href="./catalog.html?search=electronics">
+        <div class="category-card">
+          <img src="./images/electronics/laptop.jpg" alt="laptop" />
+          <h4 style="margin-top: 4em; text-align: center">Electronics</h4>
+        </div>
+      </a>
+      <a href="./catalog.html?search=fashion">
+        <div class="category-card">
+          <img src="./images/fashion/fashion.jpg" alt="fashion" />
+          <h4 style="margin-top: 4em; text-align: center">Fashion</h4>
+        </div>
+      </a>
+      <a href="./catalog.html?search=home">
+        <div class="category-card">
+          <img src="./images/home/furniture.jpg" alt="home" />
+          <h4 style="margin-top: 4em; text-align: center">Home</h4>
+        </div>
+      </a>
+      <a href="./catalog.html?search=sports">
+        <div class="category-card">
+          <img src="./images/sports/dumbbells.jpg" alt="sports" />
+          <h4 style="margin-top: 4em; text-align: center">Sports</h4>
+        </div>
+      </a>
+    </section>
+    <h3 style="margin-top: 4em">Recommended Products</h3>
+    <section class="product-list">
+      <a href="./details.html?id=1">
+        <div class="product-card">
+          <img src="./images/electronics/beats.jpg" alt="beats by dre" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Beat by dre</h4>
+            <p>GHS 1200</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=8">
+
+        <div class="product-card">
+          <img src="./images/electronics/iphone x.jpg" alt="iphone x" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Iphone X</h4>
+            <p>GHS 3200</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=3">
+
+        <div class="product-card">
+          <img src="./images/electronics/google pixel 3a.jpg" alt="pixel 3A" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Pixel 3A</h4>
+            <p>GHS 2000</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=6">
+        <div class="product-card">
+          <img src="./images/electronics/iphone 13-2.jpg" alt="iphone 13" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Iphone 13</h4>
+            <p>GHS 4500</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=21">
+
+        <div class="product-card">
+          <img src="./images/electronics/iphone xr.jpg" alt="iphone xr" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Iphone XR</h4>
+            <p>GHS 3000</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=27">
+
+        <div class="product-card">
+          <img src="./images/electronics/xbox series x.jpg" alt="xbox series x" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Xbox Series X</h4>
+            <p>GHS 5700</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=24">
+        <div class="product-card">
+          <img src="./images/electronics/samsung s21.jpg" alt="samsung s21" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Samsung S21 Ultra</h4>
+            <p>GHS 4800</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=26">
+
+        <div class="product-card">
+          <img src="./images/electronics/stadia.jpg" alt="Stadia" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Stadia</h4>
+            <p>GHS 800</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=23">
+
+        <div class="product-card">
+          <img src="./images/electronics/playstation 5 controller.jpg" alt="playstation 5 controller" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Playstation 5 controller</h4>
+            <p>GHS 250</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=12">
+
+        <div class="product-card">
+          <img src="./images/fashion/jordan 1.jpg" alt="jordan 1" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Jordan 1</h4>
+            <p>GHS 150</p>
+          </div>
+        </div>
+      </a>
+    </section>
+  </div>
+  <section class="banner">
+    <div style="
+          flex: 0.6;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        ">
+      <h2>Free delivery</h2>
+      <p>Everthing you buy from us get delivered for free.</p>
+    </div>
+    <img src="./images/delivery.jpg" alt="delivery" />
+  </section>
+  <div class="container">
+    <h3>Electronics</h3>
+    <section class="product-list">
+      <a href="./details.html?id=1">
+
+        <div class="product-card">
+          <img src="./images/electronics/beats.jpg" alt="beats by dre" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Beat by dre</h4>
+            <p>GHS 1200</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=8">
+
+        <div class="product-card">
+          <img src="./images/electronics/iphone x.jpg" alt="iphone x" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Iphone X</h4>
+            <p>GHS 3200</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=3">
+
+        <div class="product-card">
+          <img src="./images/electronics/google pixel 3a.jpg" alt="pixel 3A" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Pixel 3A</h4>
+            <p>GHS 2000</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=6">
+
+        <div class="product-card">
+          <img src="./images/electronics/iphone 13-2.jpg" alt="iphone 13" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Iphone 13</h4>
+            <p>GHS 4500</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=21">
+
+        <div class="product-card">
+          <img src="./images/electronics/iphone xr.jpg" alt="iphone xr" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Iphone XR</h4>
+            <p>GHS 3000</p>
+          </div>
+        </div>
+      </a>
+    </section>
+    <h3 style="margin-top: 2em">Gaming</h3>
+    <section class="product-list">
+      <a href="./details.html?id=27">
+
+        <div class="product-card">
+          <img src="./images/electronics/playstation 5.jpg" alt="playstation 5" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Playstation 5</h4>
+            <p>GHS 6000</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=26">
+
+        <div class="product-card">
+          <img src="./images/electronics/stadia.jpg" alt="stadia" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Stadia</h4>
+            <p>GHS 800</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=27">
+
+        <div class="product-card">
+          <img src="./images/electronics/xbox series x.jpg" alt="xbox series x" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Xbox Series X</h4>
+            <p>GHS 5700</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=28">
+
+        <div class="product-card">
+          <img src="./images/electronics/xbox controller.jpg" alt="xbox controller" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Xbox controller</h4>
+            <p>GHS 200</p>
+          </div>
+        </div>
+      </a>
+      <a href="./details.html?id=23">
+
+        <div class="product-card">
+          <img src="./images/electronics/playstation 5 controller.jpg" alt="playstation 5 controller" />
+          <div style="padding: 1em 0 0 0; width: 100%">
+            <h4>Playstation 5 Controller</h4>
+            <p>GHS 250</p>
+          </div>
+        </div>
+      </a>
+    </section>
+  </div>
+  <footer>
+    <div>
+      <h3>
+        <a href="/">E-commerce</a>
+      </h3>
+      <ul>
+        <li><a href="./about.html">about us</a></li>
+        <li><a href="./about.html#contact">contact us</a></li>
+        <li><a href="/faqs.html">faqs</a></li>
+        <li><a href="/terms.html">terms of use</a></li>
+        <li><a href="#header">move to top</a></li>
+      </ul>
+    </div>
+    Group 2 E-commerce website; Copyright &copy;2022 all right reserve.
+  </footer>
+  <script src="./js/config.js"></script>
+</body>
+
+</html>
